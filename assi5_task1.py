@@ -9,4 +9,7 @@ Original file is located at
 
 dic={"Alice":85,"A":100}
 name=input("Enter the student's name:")
-print(name,"'s marks:","=",dic[name])
+if name in dic:
+    print(name,"'s marks:","=",dic[name])
+else:
+    print("Student not found")
